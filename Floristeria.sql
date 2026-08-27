@@ -45,7 +45,7 @@ primary key(id_cliente, id_flor),
 constraint fk_pedidos_clientes
 foreign key(id_cliente)
 references clientes(numerocli)
-ON DELETE CASCADE,
+ON DELETE CASCADE
 ON UPDATE CASCADE,
 CONSTRAINT fk_pedidos_floreria
 FOREIGN KEY(id_flor) references flores(codigo)
